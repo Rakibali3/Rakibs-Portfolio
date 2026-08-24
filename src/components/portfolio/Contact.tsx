@@ -12,7 +12,7 @@ export function Contact() {
   const [sending, setSending] = useState(false);
 
   return (
-    <section id="contact" className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6">
+    <section id="contact" className="relative mx-auto max-w-6xl overflow-hidden px-4 py-24 sm:px-6">
       <div className="glow-orb bottom-0 left-1/3 -z-10 size-[240px] sm:size-[380px] bg-primary/20" aria-hidden />
       <SectionHeading eyebrow="Get in touch" title="Let's build" accent="something.">
         Have a role, a project, or just a question? Drop a line — I reply quickly.
