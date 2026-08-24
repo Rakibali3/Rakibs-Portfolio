@@ -5,9 +5,16 @@ export const PROFILE = {
   location: "Bhimavaram, Andhra Pradesh, India",
   email: "rakibaibvrm13@gmail.com",
   phone: "7842663649",
-  github: "https://github.com/",
-  linkedin: "https://www.linkedin.com/",
+  github: "https://github.com/Rakibali3",
+  linkedin: "https://linkedin.com/in/mohammad-raquib-ali-94160823b",
 };
+
+export const SOCIALS = [
+  { label: "LinkedIn", href: "https://linkedin.com/in/mohammad-raquib-ali-94160823b", icon: "linkedin" as const },
+  { label: "GitHub", href: "https://github.com/Rakibali3", icon: "github" as const },
+  { label: "Instagram", href: "https://www.instagram.com/rakib_mohammad03/", icon: "instagram" as const },
+  { label: "YouTube", href: "https://www.youtube.com/channel/UCWvEvpWJ2y_suU3V6GkS1EQ", icon: "youtube" as const },
+];
 
 export const STATS = [
   { value: "8.8", label: "B.Tech CGPA" },
