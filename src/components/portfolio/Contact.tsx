@@ -1,12 +1,14 @@
 import { useState } from "react";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, MapPin, Phone, Send, Youtube } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { PROFILE } from "./data";
+import { PROFILE, SOCIALS } from "./data";
 import { SectionHeading } from "./SectionHeading";
+
+const SOCIAL_ICONS = { linkedin: Linkedin, github: Github, instagram: Instagram, youtube: Youtube };
 
 export function Contact() {
   const [sending, setSending] = useState(false);
