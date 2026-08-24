@@ -4,8 +4,8 @@ import { SectionHeading } from "./SectionHeading";
 
 export function Work() {
   return (
-    <section id="work" className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6">
-      <div className="glow-orb -right-24 top-24 -z-10 size-[340px] bg-ion/15" aria-hidden />
+    <section id="work" className="relative mx-auto max-w-6xl overflow-hidden px-4 py-24 sm:px-6">
+      <div className="glow-orb -right-24 top-24 -z-10 size-[220px] sm:size-[340px] bg-ion/15" aria-hidden />
       <SectionHeading eyebrow="Selected work" title="Things I've" accent="shipped.">
         Each project pushed me into something new — auth, live APIs, state at scale, or a
         Python service sitting behind a React front end.

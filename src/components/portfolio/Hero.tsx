@@ -15,7 +15,7 @@ export function Hero() {
         className="glow-orb -top-32 left-1/4 -z-10 size-[420px] bg-primary/30"
         aria-hidden
       />
-      <div className="glow-orb top-40 right-0 -z-10 size-[360px] bg-ion/20" aria-hidden />
+      <div className="glow-orb top-40 right-0 -z-10 size-[240px] sm:size-[360px] bg-ion/20" aria-hidden />
 
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
