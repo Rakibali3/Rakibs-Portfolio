@@ -3,8 +3,8 @@ import { SectionHeading } from "./SectionHeading";
 
 export function About() {
   return (
-    <section id="about" className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6">
-      <div className="glow-orb top-10 -left-20 -z-10 size-[300px] bg-primary/15" aria-hidden />
+    <section id="about" className="relative mx-auto max-w-6xl overflow-hidden px-4 py-24 sm:px-6">
+      <div className="glow-orb top-10 -left-20 -z-10 size-[200px] sm:size-[300px] bg-primary/15" aria-hidden />
       <SectionHeading eyebrow="About me" title="Engineer with a" accent="builder's habit." />
 
       <div className="mt-14 grid gap-6 lg:grid-cols-[1.3fr_1fr]">
