@@ -73,6 +73,29 @@ export function Contact() {
               </a>
             </li>
           </ul>
+
+          <div className="mt-8 border-t border-border/60 pt-7">
+            <h3 className="font-display text-lg font-semibold">Follow me</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Find me across the internet.</p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              {SOCIALS.map((s) => {
+                const Icon = SOCIAL_ICONS[s.icon];
+                return (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    title={s.label}
+                    className="group grid size-11 place-items-center rounded-2xl border border-border/70 bg-surface-2/50 text-muted-foreground transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:text-foreground"
+                  >
+                    <Icon className="size-[18px] transition-transform duration-300 group-hover:scale-110" />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
