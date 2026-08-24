@@ -54,6 +54,7 @@ export const PROJECTS = [
       "A full event platform with secure sign-up and login, event sharing and registration, plus an admin surface to create, post and delete events.",
     tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MySQL"],
     highlight: "Password hashing + session auth",
+    github: "https://github.com/Rakibali3/Event-Management-System.git",
   },
   {
     title: "Food Ordering Website",
@@ -62,6 +63,7 @@ export const PROJECTS = [
       "React app consuming the Swiggy live API with an Express + MongoDB backend for authentication and Redux Toolkit driving global state.",
     tags: ["React.js", "Tailwind", "Redux Toolkit", "MongoDB"],
     highlight: "Live API + cart state",
+    github: "https://github.com/Rakibali3/React.git",
   },
   {
     title: "QA Crafter",
@@ -70,6 +72,7 @@ export const PROJECTS = [
       "Group project that summarises text or PDF input, then generates question-and-answer sets from the summary using a Python/Flask service.",
     tags: ["React.js", "Tailwind", "Python", "Flask"],
     highlight: "PDF → summary → Q&A pipeline",
+    github: "https://github.com/Rakibali3/NLP-PROJECT.git",
   },
 ];
 

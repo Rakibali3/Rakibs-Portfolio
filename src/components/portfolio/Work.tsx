@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github } from "lucide-react";
 import { PROJECTS } from "./data";
 import { SectionHeading } from "./SectionHeading";
 
@@ -23,9 +23,20 @@ export function Work() {
             </span>
 
             <div className="min-w-0">
-              <h3 className="font-display text-2xl font-bold transition-colors duration-400 group-hover:text-ion sm:text-3xl">
-                {p.title}
-              </h3>
+              <div className="flex items-start justify-between gap-4">
+                <h3 className="font-display text-2xl font-bold transition-colors duration-400 group-hover:text-ion sm:text-3xl">
+                  {p.title}
+                </h3>
+                <a
+                  href={p.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${p.title} source on GitHub`}
+                  className="shrink-0 rounded-full border border-border/70 bg-surface p-2.5 text-muted-foreground transition-colors hover:border-ion/50 hover:text-ion"
+                >
+                  <Github className="size-5" />
+                </a>
+              </div>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
                 {p.blurb}
               </p>
