@@ -51,6 +51,7 @@
   --animate-spin-slow: spin 40s linear infinite;
   --animate-blink: blink 1s step-end infinite;
   --animate-sheen: sheen 3.5s linear infinite;
+  --animate-scan: scan 6s linear infinite;
 }
 
 :root {
@@ -185,7 +186,7 @@ html.light {
   }
 
   ::selection {
-    background: oklch(0.62 0.235 288 / 0.4);
+    background: color-mix(in oklab, var(--primary) 35%, transparent);
   }
 
   h1,
@@ -213,6 +214,21 @@ html.light {
   }
   50% {
     transform: translate3d(0, -18px, 0);
+  }
+}
+
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes scan {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(600%);
   }
 }
 
@@ -244,22 +260,22 @@ html.light {
 
 @utility grid-canvas {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 0.045) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black, transparent 75%);
 }
 
 @utility glass-panel {
-  background: color-mix(in oklab, var(--surface) 70%, transparent);
+  background: color-mix(in oklab, var(--surface) var(--panel-tint), transparent);
   backdrop-filter: blur(18px);
-  border: 1px solid oklch(1 0 0 / 0.08);
+  border: 1px solid var(--edge-line-strong);
 }
 
 @utility edge-card {
   position: relative;
-  background: color-mix(in oklab, var(--surface) 82%, transparent);
-  border: 1px solid oklch(1 0 0 / 0.07);
+  background: color-mix(in oklab, var(--surface) 88%, transparent);
+  border: 1px solid var(--edge-line);
   transition:
     transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
     border-color 0.4s ease,
@@ -278,7 +294,7 @@ html.light {
 
   &:hover {
     transform: translateY(-6px);
-    border-color: oklch(0.62 0.235 288 / 0.55);
+    border-color: color-mix(in oklab, var(--primary) 55%, transparent);
     box-shadow: var(--shadow-glow);
   }
 
