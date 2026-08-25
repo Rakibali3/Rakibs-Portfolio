@@ -103,7 +103,66 @@
   );
   --shadow-glow: 0 0 0 1px oklch(0.62 0.235 288 / 0.35), 0 24px 70px -30px oklch(0.62 0.235 288 / 0.7);
   --shadow-lift: 0 30px 80px -40px oklch(0.05 0.03 265 / 0.9);
+
+  /* hairlines / overlays — flipped in light mode */
+  --edge-line: oklch(1 0 0 / 0.07);
+  --edge-line-strong: oklch(1 0 0 / 0.08);
+  --grid-line: oklch(1 0 0 / 0.045);
+  --panel-tint: 70%;
 }
+
+html.light {
+  --background: oklch(0.98 0.006 265);
+  --foreground: oklch(0.21 0.03 265);
+
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.96 0.008 265);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.21 0.03 265);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.21 0.03 265);
+
+  --primary: oklch(0.53 0.24 288);
+  --primary-foreground: oklch(0.99 0.005 288);
+
+  --ion: oklch(0.55 0.13 210);
+  --ion-foreground: oklch(0.99 0.004 265);
+
+  --secondary: oklch(0.95 0.01 268);
+  --secondary-foreground: oklch(0.24 0.03 265);
+
+  --muted: oklch(0.95 0.008 265);
+  --muted-foreground: oklch(0.47 0.025 265);
+
+  --accent: oklch(0.93 0.03 290);
+  --accent-foreground: oklch(0.24 0.03 265);
+
+  --border: oklch(0.89 0.012 268);
+  --input: oklch(0.91 0.012 268);
+  --ring: oklch(0.53 0.24 288);
+
+  --gradient-ion: linear-gradient(
+    100deg,
+    oklch(0.5 0.24 288),
+    oklch(0.52 0.2 320),
+    oklch(0.55 0.13 205)
+  );
+  --gradient-edge: linear-gradient(
+    140deg,
+    oklch(0.53 0.24 288 / 0.1),
+    oklch(1 0 0 / 0.01) 45%,
+    oklch(0.55 0.13 205 / 0.12)
+  );
+  --shadow-glow: 0 0 0 1px oklch(0.53 0.24 288 / 0.25), 0 24px 70px -34px oklch(0.53 0.24 288 / 0.45);
+  --shadow-lift: 0 30px 80px -44px oklch(0.4 0.05 265 / 0.35);
+
+  --edge-line: oklch(0.2 0.03 265 / 0.09);
+  --edge-line-strong: oklch(0.2 0.03 265 / 0.12);
+  --grid-line: oklch(0.2 0.03 265 / 0.06);
+  --panel-tint: 88%;
+}
+
 
 @layer base {
   * {
