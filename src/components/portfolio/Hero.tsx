@@ -2,7 +2,7 @@ import { ArrowDownToLine, ArrowUpRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTypewriter } from "@/hooks/use-typewriter";
 import { MARQUEE, PROFILE, STATS } from "./data";
-import heroOrb from "@/assets/hero-orb.jpg";
+import { HeroTerminal } from "./HeroTerminal";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 export function Hero() {
@@ -73,24 +73,7 @@ export function Hero() {
         </div>
 
         <div className="reveal relative" style={{ ["--reveal-delay" as string]: "200ms" }}>
-          <div className="relative mx-auto aspect-square w-full max-w-md animate-float">
-            <img
-              src={heroOrb}
-              alt="Abstract glowing wireframe sphere"
-              width={1200}
-              height={1200}
-              className="size-full rounded-full object-cover opacity-90 mix-blend-screen"
-            />
-            <div className="absolute inset-6 animate-spin-slow rounded-full border border-dashed border-primary/25" />
-            <div className="absolute inset-16 rounded-full border border-ion/20" />
-          </div>
-
-          <div className="glass-panel absolute bottom-2 left-0 rounded-2xl px-4 py-3 sm:left-4">
-            <p className="font-mono text-[11px] tracking-widest text-muted-foreground uppercase">
-              Available for
-            </p>
-            <p className="font-display text-sm font-semibold">Full-stack roles</p>
-          </div>
+          <HeroTerminal />
         </div>
       </div>
 
