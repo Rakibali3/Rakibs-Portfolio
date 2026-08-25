@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { PROFILE } from "./data";
+import { ThemeToggle } from "./ThemeToggle";
 
 const LINKS = [
   { href: "#about", label: "About" },
@@ -49,6 +50,7 @@ export function Nav() {
         </div>
 
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <Button asChild variant="ion" size="sm" className="hidden sm:inline-flex">
             <a href="#contact">Hire me</a>
           </Button>
