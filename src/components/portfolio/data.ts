@@ -1,7 +1,7 @@
 export const PROFILE = {
   name: "Mohammad Raquib Ali",
   short: "Raquib",
-  roles: ["Full-Stack Developer", "React Engineer", "Problem Solver", "Pega CSA"],
+  roles: ["Full-Stack Developer", "React Engineer", "Pega CSA"],
   location: "Bhimavaram, Andhra Pradesh, India",
   email: "rakibaibvrm13@gmail.com",
   phone: "7842663649",
@@ -15,6 +15,10 @@ export const SOCIALS = [
   { label: "Instagram", href: "https://www.instagram.com/rakib_mohammad03/", icon: "instagram" as const },
   { label: "YouTube", href: "https://www.youtube.com/channel/UCWvEvpWJ2y_suU3V6GkS1EQ", icon: "youtube" as const },
 ];
+
+export const googleDriveFileID = "15LmyZDyeXvjuU4rlBk-X6nohEqF13uld";
+
+export const downloadLink = `https://drive.google.com/uc?export=download&id=${googleDriveFileID}`;
 
 export const STATS = [
   { value: "8.8", label: "B.Tech CGPA" },
@@ -121,5 +125,4 @@ export const EXTRAS = [
   "Certified Pega System Architect (CSA 24)",
   "Best Project Award — Full Stack Development",
   "GenZ AI Competition participant",
-  "English · Hindi · Telugu",
 ];

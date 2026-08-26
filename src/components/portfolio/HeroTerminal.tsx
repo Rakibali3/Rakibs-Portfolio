@@ -14,6 +14,8 @@ const SCRIPT: Line[] = [
   { kind: "key", text: '  "frontend": ["React", "Redux Toolkit", "Tailwind"],' },
   { kind: "key", text: '  "backend":  ["Node", "Express", "Flask"],' },
   { kind: "key", text: '  "data":     ["MongoDB", "MySQL"],' },
+  { kind: "cmd", text: "let's_build" },
+  { kind: "out", text: "Always open to exciting opportunities!" },
   { kind: "cmd", text: "npm run build --portfolio" },
   { kind: "out", text: "compiling modules ......... 100%" },
   { kind: "ok", text: "✔ built in 0.42s — ready to hire" },
@@ -73,6 +75,11 @@ export function HeroTerminal() {
             <Terminal className="size-3.5 shrink-0" />
             <span className="truncate">raquib@dev — zsh</span>
           </p>
+
+          <div className="ml-auto flex items-center gap-1.5 font-mono text-[13px] text-emerald-500">
+            <span className="size-3 rounded-full bg-emerald-500 animate-pulse" />
+            <span>online</span>
+          </div>
         </div>
 
         {/* body */}
@@ -112,11 +119,16 @@ function TerminalLine({ line, text, caret }: { line: Line; text: string; caret?:
     <p className="break-words whitespace-pre-wrap">
       {line.kind === "cmd" && (
         <>
-          <span className="text-ion">➜</span> <span className="text-muted-foreground/70">~</span>{" "}
+          <span className="text-ion">➜</span>{" "}
+          <span className="text-muted-foreground/70">~</span>{" "}
         </>
       )}
       <span className={color}>{text}</span>
-      {caret && <span className="text-primary" style={{ animation: "caret 1s step-end infinite" }}>▋</span>}
+      {caret && (
+        <span className="text-primary" style={{ animation: "caret 1s step-end infinite" }}>
+          ▋
+        </span>
+      )}
     </p>
   );
 }

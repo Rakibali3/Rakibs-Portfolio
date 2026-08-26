@@ -1,9 +1,8 @@
 import { ArrowDownToLine, ArrowUpRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTypewriter } from "@/hooks/use-typewriter";
-import { MARQUEE, PROFILE, STATS } from "./data";
+import { MARQUEE, PROFILE, STATS, downloadLink } from "./data";
 import { HeroTerminal } from "./HeroTerminal";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 export function Hero() {
   const typed = useTypewriter(PROFILE.roles);
@@ -11,11 +10,11 @@ export function Hero() {
   return (
     <section id="top" className="relative overflow-x-clip pt-28 pb-16 sm:pt-40">
       <div className="grid-canvas absolute inset-0 -z-10" aria-hidden />
+      <div className="glow-orb -top-32 left-1/4 -z-10 size-[420px] bg-primary/30" aria-hidden />
       <div
-        className="glow-orb -top-32 left-1/4 -z-10 size-[420px] bg-primary/30"
+        className="glow-orb top-40 right-0 -z-10 size-[240px] sm:size-[360px] bg-ion/20"
         aria-hidden
       />
-      <div className="glow-orb top-40 right-0 -z-10 size-[240px] sm:size-[360px] bg-ion/20" aria-hidden />
 
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
@@ -23,7 +22,10 @@ export function Hero() {
             Hi there — welcome
           </p>
 
-          <h1 className="reveal mt-6 text-[clamp(2.25rem,11vw,3rem)] leading-[0.95] font-bold sm:text-6xl lg:text-7xl" style={{ ["--reveal-delay" as string]: "80ms" }}>
+          <h1
+            className="reveal mt-6 text-[clamp(2.25rem,11vw,3rem)] leading-[0.95] font-bold sm:text-6xl lg:text-7xl"
+            style={{ ["--reveal-delay" as string]: "80ms" }}
+          >
             Mohammad
             <br />
             Raquib <span className="text-ion">Ali</span>
@@ -42,9 +44,9 @@ export function Hero() {
             className="reveal mt-6 max-w-xl text-base leading-relaxed text-muted-foreground"
             style={{ ["--reveal-delay" as string]: "220ms" }}
           >
-            I build web applications end to end — clean React interfaces on the front, solid
-            Node and data layers behind them. Currently sharpening enterprise engineering
-            skills at Cognizant.
+            I build web applications end to end — clean React interfaces on the front, solid Node
+            and data layers behind them. Currently sharpening enterprise engineering skills at
+            Cognizant.
           </p>
 
           <div
@@ -52,7 +54,7 @@ export function Hero() {
             style={{ ["--reveal-delay" as string]: "300ms" }}
           >
             <Button asChild variant="ion" size="xl">
-              <a href={resumeAsset.url} download>
+              <a href={downloadLink} target="_blank" rel="noopener noreferrer">
                 Download CV <ArrowDownToLine />
               </a>
             </Button>
