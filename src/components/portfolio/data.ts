@@ -63,7 +63,7 @@ export const PROJECTS = [
     year: "2024",
     blurb:
       "A full event platform with secure sign-up and login, event sharing and registration, plus an admin surface to create, post and delete events.",
-    tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MySQL"],
+    tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "PostgreSQL"],
     highlight: "Password hashing + session auth",
     github: "https://github.com/Rakibali3/Event-Management-System.git",
   },
