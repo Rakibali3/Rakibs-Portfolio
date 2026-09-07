@@ -114,7 +114,7 @@ export const EDUCATION = [
     detail: "Mathematics, Physics and Chemistry · CGPA 9.22",
   },
   {
-    period: "2017 — 2018",
+    period: "2018 — 2019",
     title: "Secondary School Education",
     org: "Wonder Kids E.M High School",
     detail: "GPA 9.2",
