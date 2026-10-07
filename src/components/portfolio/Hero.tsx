@@ -44,9 +44,7 @@ export function Hero() {
             className="reveal mt-6 max-w-xl text-base leading-relaxed text-muted-foreground"
             style={{ ["--reveal-delay" as string]: "220ms" }}
           >
-            I build web applications end to end — clean React interfaces on the front, solid Node
-            and data layers behind them. Currently sharpening enterprise engineering skills at
-            Cognizant.
+           Previously worked at Cognizant, building enterprise applications and strengthening my full-stack engineering skills.
           </p>
 
           <div

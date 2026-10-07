@@ -26,7 +26,10 @@ export const downloadLink = `https://drive.google.com/uc?export=download&id=${go
 
 export const STATS = [
   { value: "8.8", label: "B.Tech CGPA" },
-  { value: "1+", label: "Years at Cognizant" },
+  {
+    value: "1",
+    label: "Year Experience",
+  }
   { value: "10+", label: "Technologies" },
   { value: "3", label: "Shipped projects" },
 ];

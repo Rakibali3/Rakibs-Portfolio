@@ -20,9 +20,7 @@ export function About() {
               Node.js, and modern databases.
             </p>
             <p>
-              At Cognizant I work on enterprise applications as a Program Analyst Trainee:
-              requirement analysis, coding, testing and production support. That mix taught me
-              something side projects can't — how software behaves once real people depend on it.
+              At Cognizant, I worked on enterprise applications and gained experience working with enterprise technologies and development practices.
             </p>
             <p className="text-foreground">
               I'm looking for a team where I can keep developing, keep learning, and take ownership of
