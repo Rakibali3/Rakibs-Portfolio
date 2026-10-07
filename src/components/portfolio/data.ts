@@ -10,7 +10,11 @@ export const PROFILE = {
 };
 
 export const SOCIALS = [
-  { label: "LinkedIn", href: "https://linkedin.com/in/mohammad-raquib-ali-94160823b", icon: "linkedin" as const },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/mohammad-raquib-ali-94160823b",
+    icon: "linkedin" as const,
+  },
   { label: "GitHub", href: "https://github.com/Rakibali3", icon: "github" as const },
   { label: "Instagram", href: "https://www.instagram.com/rakib_mohammad03/", icon: "instagram" as const },
   { label: "YouTube", href: "https://www.youtube.com/channel/UCWvEvpWJ2y_suU3V6GkS1EQ", icon: "youtube" as const },
@@ -59,6 +63,33 @@ export const SKILL_GROUPS = [
 
 export const PROJECTS = [
   {
+    title: "SkillBridge",
+    year: "2026",
+    blurb:
+      "A full-stack skill-sharing platform where users can manage their skills, discover personalized matches, exchange knowledge, communicate in real time, and follow learning paths.",
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "Spring Boot",
+      "PostgreSQL",
+      "JWT",
+      "WebSocket",
+      "React Query",
+      "Cloudinary"
+    ],
+    highlight: "Skill matching + real-time communication",
+    github: "https://github.com/Rakibali3/Skill-Bridge.git"
+  },
+  {
+    title: "QA Crafter",
+    year: "2025",
+    blurb:
+      "Group project that summarises text or PDF input, then generates question-and-answer sets from the summary using a Python/Flask service.",
+    tags: ["React.js", "Tailwind", "Python", "Flask"],
+    highlight: "PDF → summary → Q&A pipeline",
+    github: "https://github.com/Rakibali3/NLP-PROJECT.git",
+  },
+  {
     title: "Event Management System",
     year: "2024",
     blurb:
@@ -75,15 +106,6 @@ export const PROJECTS = [
     tags: ["React.js", "Tailwind", "Redux Toolkit", "MongoDB"],
     highlight: "Live API + cart state",
     github: "https://github.com/Rakibali3/React.git",
-  },
-  {
-    title: "QA Crafter",
-    year: "2025",
-    blurb:
-      "Group project that summarises text or PDF input, then generates question-and-answer sets from the summary using a Python/Flask service.",
-    tags: ["React.js", "Tailwind", "Python", "Flask"],
-    highlight: "PDF → summary → Q&A pipeline",
-    github: "https://github.com/Rakibali3/NLP-PROJECT.git",
   },
 ];
 
