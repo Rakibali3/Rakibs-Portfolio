@@ -44,7 +44,7 @@ export function Hero() {
             className="reveal mt-6 max-w-xl text-base leading-relaxed text-muted-foreground"
             style={{ ["--reveal-delay" as string]: "220ms" }}
           >
-           Previously worked at Cognizant, building enterprise applications and strengthening my full-stack engineering skills.
+            Previously worked at Cognizant, building enterprise applications and strengthening my full-stack engineering skills.
           </p>
 
           <div

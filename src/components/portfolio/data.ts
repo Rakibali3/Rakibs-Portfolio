@@ -29,7 +29,7 @@ export const STATS = [
   {
     value: "1",
     label: "Year Experience",
-  }
+  },
   { value: "10+", label: "Technologies" },
   { value: "3", label: "Shipped projects" },
 ];
